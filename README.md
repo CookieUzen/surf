@@ -1,11 +1,11 @@
-# surf - simple webkit-based browser
+surf - simple webkit-based browser
 ==================================
 surf is a simple Web browser based on WebKit/GTK+.
 
-# Modifications
+Modifications
 =================================
 
-## Patches
+Patches
 -----------
 - [cliboard instead of primary](https://surf.suckless.org/patches/clipboard-instead-of-primary/)
 - [history](https://surf.suckless.org/patches/externalpipe/)
@@ -14,7 +14,7 @@ surf is a simple Web browser based on WebKit/GTK+.
 - [aria2c](https://surf.suckless.org/patches/aria2/)
 
 
-# Suckless REAME
+Suckless REAME
 =================================
 The original Suckless README
 
