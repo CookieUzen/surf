@@ -10,9 +10,9 @@ Patches
 - [cliboard instead of primary](https://surf.suckless.org/patches/clipboard-instead-of-primary/)
 - [history](https://surf.suckless.org/patches/externalpipe/)
 - [homepage](https://surf.suckless.org/patches/homepage/)
-- [chromebar](https://surf.suckless.org/patches/chromebar/)
 - [aria2c](https://surf.suckless.org/patches/aria2/)
 
+-[chromebar](https://surf.suckless.org/patches/chromebar/)
 
 Suckless REAME
 =================================
