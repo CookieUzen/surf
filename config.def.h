@@ -81,7 +81,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
 /* DOWNLOAD(URI, referer) */
 #define DOWNLOAD(d, r) { \
 	.v = (char *[]){ "/bin/sh", "-c", \
-		"cd ~/Telechargements;"\
+		"cd ~/Downloads;"\
 		"st -e /bin/sh -c \"aria2c -U '$1'" \
 		" --referer '$2' --load-cookies $3 --save-cookies $3 '$0';" \
 		" sleep 3;\"", \
@@ -106,10 +106,12 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
         } \
 }
 
-#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
-"prop=\"`surf_history_dmenu.sh`\" &&" \
-"xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
-p, winid, NULL } }
+#define SETURI(p) {\
+        .v = (char *[]){ "/bin/sh", "-c", \
+            "prop=\"`surf_history_dmenu.sh`\" &&" \
+            "xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
+        p, winid, NULL } \
+}
 
 /* styles */
 /*
